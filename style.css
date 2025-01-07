@@ -88,7 +88,7 @@ a {
 
 .hover-link:hover {
   color: var(--btn1-text-hover-color) ;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: var(--btn1-background-color);
   padding: 4px 12px;
 }
