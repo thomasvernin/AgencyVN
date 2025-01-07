@@ -106,7 +106,7 @@ ul {
   left: 0;
   right: 0;
   padding: 10px 10px;
-  background-color: ;
+  background-color: var(--accent-color);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: 1000;
@@ -180,7 +180,7 @@ ul {
 
 /* header  */
 header {
-  background-color: ;
+  background-color:;
 }
 
 .header-section {
