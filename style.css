@@ -18,7 +18,7 @@ html {
   --accent-color-dark: black;
   --padding-inline-section: white ;
   --hover-links-color : rgb(240, 240, 240) ; 
-  --btn1-background-color : #C1AA90 ; 
+  --btn1-background-color : #695441 ; 
   --btn1-text-color : black ;
 }
   
@@ -31,7 +31,7 @@ html {
   --accent-color-dark: black;
   --padding-inline-section: black ;
   --hover-links-color : rgb(49, 49, 49) ;
-  --btn1-background-color : #C1AA90 ;
+  --btn1-background-color : #695441 ;
   --btn1-text-color : black ;
 }
 
@@ -156,7 +156,7 @@ ul {
 }
 
 .primary-button {
-  background-color: var(--accent-color);
+  background-color: var(--btn1-background-color);
   border-radius: 6px;
   font-weight: 500;
   color: var(--btn1-text-color);
