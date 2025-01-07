@@ -82,7 +82,7 @@ a {
 
 .hover-link:hover {
   color: var(--secondary-text-color) ;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: var(--hover-links-color);
   padding: 4px 12px;
 }
@@ -106,7 +106,7 @@ ul {
   left: 0;
   right: 0;
   padding: 10px 10px;
-  background-color: var(--accent-color);
+  background-color: #C1AA90 ;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: 1000;
