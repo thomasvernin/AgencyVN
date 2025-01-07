@@ -10,26 +10,25 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
 :root {
-  --background-color: rgb(255, 255, 255) ; 
-  --primary-text-color: #28282f;
-  --secondary-text-color: #797e8d;
-  --accent-color: #ddd795;
+  --background-color:white; 
+  --primary-text-color: #000000;
+  --secondary-text-color: #5d5d5d;
+  --accent-color: #bab372;
   --accent-color-dark: black;
-  --padding-inline-section: 20px;
+  --padding-inline-section: white ;
+  --hover-links-color : rgb(240, 240, 240) ; 
 }
   
   [data-theme='dark'] {
 
   --background-color: black ; 
-  --primary-text-color: #707070;
-  --secondary-text-color: #797e8d;
-  --accent-color: #bebebe;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #767676;
+  --accent-color:#bab372;
   --accent-color-dark: black;
-  --padding-inline-section: 20px;
+  --padding-inline-section: black ;
+  --hover-links-color : rgb(49, 49, 49) ;
 }
 
 
@@ -78,14 +77,14 @@ a {
 }
 
 .hover-link {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color) ;
 }
 
 .hover-link:hover {
-  color: var(--accent-color);
-  border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.066);
-  padding: 6px 15px;
+  color: var(--secondary-text-color) ;
+  border-radius: 20px;
+  background-color: var(--hover-links-color);
+  padding: 4px 12px;
 }
 
 .flex {
@@ -107,9 +106,9 @@ ul {
   left: 0;
   right: 0;
   padding: 10px 10px;
-  background-color: rgba(255, 255, 255, 0.625);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: ;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   z-index: 1000;
   max-width: none; 
 } 
@@ -129,7 +128,7 @@ ul {
 
 .company-logo span {
   font-size: 24px;
-  color: #28282f;
+  color: ;
   font-weight: 600;
 }
 
@@ -156,15 +155,13 @@ ul {
   background-color: var(--accent-color);
   border-radius: 6px;
   font-weight: 500;
-  color: white !important;
+  color: black;
   padding: 6px 10px;
-  box-shadow: 0 0 2px var(--secondary-text-color);
-  transition: 0.2s ease-out;
   text-align: center;
 }
 
 .primary-button:hover {
-  background-color: var(--accent-color-dark);
+  opacity: 0.8;
 }
 
 .secondary-button {
@@ -177,13 +174,13 @@ ul {
 }
 
 .secondary-button:hover {
-  border-color: var(--accent-color);
+  border-color: var(--primary-text-color);
   color: var(--accent-color) !important;
 }
 
 /* header  */
 header {
-  padding: 30px var(--padding-inline-section);
+  background-color: ;
 }
 
 .header-section {
@@ -212,11 +209,10 @@ header {
 .companies-header {
   text-align: center;
   margin-block: 30px;
-  color: var(--primary-text-color);
+  color: ;
 }
 .logos {
   justify-content: space-evenly;
-
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -373,8 +369,6 @@ footer {
   gap: 30px;
 }
 
-
-
 /* reusable */
 .button {
   display: inline-block;
@@ -393,6 +387,7 @@ footer {
 .button-small {
   padding: 0.75rem 1rem;
 }
+
 .button-link {
   padding: 0;
   background-color: transparent;
@@ -481,26 +476,16 @@ footer {
   visibility: visible;
 }
 
-/* scroll thumb and bar  */
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--accent-color-dark);
-  border-radius: 0.5rem;
-}
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color-dark);
-  border-radius: 0.5rem;
-}
 /* scroll to top  */
 .scrollup {
   position: fixed;
   right: 1rem;
-  bottom: -20%;
+  bottom: 0%;
   background-color: var(--accent-color);
   opacity: 0.8;
-  padding: 0.2rem 0.4rem;
-  border-radius: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
   z-index: 10;
   transition: 0.4s;
 }
@@ -510,10 +495,10 @@ footer {
 }
 
 .scroll-up-icon {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--background-color);
 }
 
 .show-scroll {
-  bottom: 5rem;
+  bottom: 3rem;
 }
