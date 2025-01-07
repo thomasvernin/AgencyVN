@@ -174,8 +174,7 @@ ul {
 }
 
 .secondary-button:hover {
-  border-color: var(--primary-text-color);
-  color: var(--accent-color) !important;
+  opacity: 0.5 ; 
 }
 
 /* header  */
