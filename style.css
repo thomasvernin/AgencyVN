@@ -18,6 +18,8 @@ html {
   --accent-color-dark: black;
   --padding-inline-section: white ;
   --hover-links-color : rgb(240, 240, 240) ; 
+  --btn1-background-color : #C1AA90 ; 
+  --btn1-text-color : black ;
 }
   
   [data-theme='dark'] {
@@ -29,6 +31,8 @@ html {
   --accent-color-dark: black;
   --padding-inline-section: black ;
   --hover-links-color : rgb(49, 49, 49) ;
+  --btn1-background-color : #C1AA90 ;
+  --btn1-text-color : black ;
 }
 
 
@@ -77,13 +81,13 @@ a {
 }
 
 .hover-link {
-  color: var(--secondary-text-color) ;
+  color: var(--btn1-text-color) ;
 }
 
 .hover-link:hover {
-  color: var(--secondary-text-color) ;
-  border-radius: 5px;
-  background-color: var(--hover-links-color);
+  color: var(--btn1-text-color) ;
+  border-radius: 20px;
+  background-color: var(--btn1-background-color);
   padding: 4px 12px;
 }
 
@@ -155,7 +159,7 @@ ul {
   background-color: var(--accent-color);
   border-radius: 6px;
   font-weight: 500;
-  color: black;
+  color: var(--btn1-text-color);
   padding: 6px 10px;
   text-align: center;
 }
@@ -165,10 +169,10 @@ ul {
 }
 
 .secondary-button {
-  border: 0.5px solid var(--secondary-text-color);
+  border: 1px solid var(--btn1-background-color);
   border-radius: 6px;
   font-weight: 500;
-  color: var(--primary-text-color) !important;
+  color: var(--btn1-text-color) !important;
   padding: 6px 12px;
   transition: 0.2s ease-out;
 }
