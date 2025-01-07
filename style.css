@@ -16,7 +16,7 @@ html {
   --secondary-text-color: #5d5d5d;
   --accent-color: #bab372;
   --accent-color-dark: black;
-  --padding-inline-section: white ;
+  --padding-inline-section: 20px ;
   --hover-links-color : rgb(240, 240, 240) ; 
   --btn1-background-color : #695441 ; 
   --btn1-text-color : black ;
@@ -30,7 +30,7 @@ html {
   --secondary-text-color: #767676;
   --accent-color:#bab372;
   --accent-color-dark: black;
-  --padding-inline-section: black ;
+  --padding-inline-section: 20px ;
   --hover-links-color : rgb(49, 49, 49) ;
   --btn1-background-color : #695441 ;
   --btn1-text-color : white ;

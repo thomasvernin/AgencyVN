@@ -2,17 +2,18 @@
   .nav-toggle {
     display: block;
     margin-right: 20px;
+    margin-bottom: 0.6rem;
   }
   .main-nav {
     overflow: inherit;
   }
   .nav-links {
     position: absolute;
-    background-color: white;
+    background-color: white ;
     left: -100%;
     top: 100%;
     width: 100%;
-    padding-block: 20px;
+    padding-block: 40px;
     transition: 0.2s ease-in-out;
     justify-content: center; 
     align-items: center; 
@@ -33,6 +34,10 @@
 
   .primary-button.n { 
     padding: 8px 310px;
+  }
+
+  .company-logo {
+    bottom : 0.4rem;
   }
 
   .features-section,
