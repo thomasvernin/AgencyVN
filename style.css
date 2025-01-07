@@ -106,9 +106,9 @@ ul {
   left: 0;
   right: 0;
   padding: 10px 10px;
-  background-color: #C1AA90 ;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
+  background-color: white;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
   z-index: 1000;
   max-width: none; 
 } 
