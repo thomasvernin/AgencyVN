@@ -44,30 +44,7 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
-// Theme toggle
-const themeToggleButton = document.getElementById("theme-toggle");
-const themeIcon = document.getElementById("theme-icon");
-const currentTheme = localStorage.getItem("theme");
-const htmlElement = document.documentElement;
 
-if (currentTheme) {
-  htmlElement.setAttribute("data-theme", currentTheme);
-  themeIcon.classList = currentTheme === "dark" ? "bx bx-sun" : "bx bx-moon"; // Icône initiale inversée
-} else {
-  themeIcon.classList = "bx bx-moon"; // Icône lune par défaut
-}
-
-themeToggleButton.addEventListener("click", () => {
-  const newTheme = htmlElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  htmlElement.setAttribute("data-theme", newTheme);
-  localStorage.setItem("theme", newTheme);
-
-  if (newTheme === "dark") {
-    themeIcon.classList = "bx bx-sun"; // Soleil pour mode sombre
-  } else {
-    themeIcon.classList = "bx bx-moon"; // Lune pour mode clair
-  }
-});
 
 
 

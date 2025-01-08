@@ -1,26 +1,33 @@
-// Sélectionner le bouton, l'icône et l'élément <html> ou <body>
-const themeToggleButton = document.getElementById('theme-toggle');
-const themeIcon = document.getElementById('theme-icon');
-const currentTheme = localStorage.getItem('theme');
+const themeToggleButton = document.getElementById("theme-toggle-footer");
+const iconMoon = document.getElementById("icon-moon-footer");
+const iconSun = document.getElementById("icon-sun-footer");
+const currentTheme = localStorage.getItem("theme");
 const htmlElement = document.documentElement;
 
-// Appliquer le thème actuel si disponible
+// Initialisation du thème
 if (currentTheme) {
-  htmlElement.setAttribute('data-theme', currentTheme);
-  themeIcon.classList = currentTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun'; // Mettre l'icône appropriée
+  htmlElement.setAttribute("data-theme", currentTheme);
+  if (currentTheme === "dark") {
+    iconSun.classList.add("selected-icon"); 
+  } else {
+    iconMoon.classList.add("selected-icon"); 
+  }
+} else {
+  htmlElement.setAttribute("data-theme", "light"); // Thème par défaut
+  iconSun.classList.add("selected-icon"); // Sélectionner l'icône Soleil par défaut
 }
 
-// Ajouter un événement au bouton pour basculer le thème
-themeToggleButton.addEventListener('click', () => {
-  const newTheme = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  htmlElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme); // Sauvegarder le thème dans le localStorage
+themeToggleButton.addEventListener("click", () => {
+  const newTheme = htmlElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  htmlElement.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
 
-  // Changer l'icône selon le thème
-  if (newTheme === 'dark') {
-    themeIcon.classList = 'fas fa-moon'; // Icône de lune pour le mode sombre
+  if (newTheme === "dark") {
+    iconSun.classList.add("selected-icon");
+    iconMoon.classList.remove("selected-icon");
   } else {
-    themeIcon.classList = 'fas fa-sun'; // Icône de soleil pour le mode clair
+    iconMoon.classList.add("selected-icon");
+    iconSun.classList.remove("selected-icon");
   }
 });
 
