@@ -6,9 +6,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 :root {
   --background-color:white; 
@@ -373,16 +371,6 @@ footer {
   justify-content: center;
   gap: 30px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* reusable */
 .button {
